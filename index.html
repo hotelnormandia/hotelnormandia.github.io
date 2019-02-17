@@ -42,6 +42,34 @@ function closeNav() {
 </script>
   
 <style>
+	
+	/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 032 css*/
+.jssorb032 {position:absolute;}
+.jssorb032 .i {position:absolute;cursor:pointer;}
+.jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
 
 .bonito {
   font-family: 'Tangerine', serif;
@@ -171,17 +199,49 @@ body {
 </style>
   
 <title>HOTEL NORMANDIA</title>
-  
-   
 </head> 
-  
 <body>
- <!-- #endregion Jssor Slider inicio1 -->	
+	<!-- #inicio  main nav bar -->	
+<nav class="navbar navbar-inverse navbar-fixed-top" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">HOTEL NORMANDIA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HABITACIONES Y SERVICIOS</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NUESTROS HOTELES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://hotelnormandia.github.io/">Hotel Normandia</a></li>
+            <li><a href="http://reservas.hotelboteromedellin.com.co/">Hotel Botero </a></li>
+           
+          </ul>
+        </li>
+        <li><a href="#">QUÍENES SOMOS</a></li>
+	<li><a href="#">MISIÓN</a></li>
+        <li><a href="#">VISIÓN</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Calle 53 #49-100, Medellín, Antioquia </a></li>
+        <li><a href="#"><span></span> WhatsApp +57 318 03637898</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>	
+ <!-- #end main nav bar -->	
+	
+<!-- #endregion Jssor Slider inicio1 -->	
 <!-- #region Jssor Slider Begin -->
-    <!-- Generator: Jssor Slider Maker -->
-    <!-- Source: https://www.jssor.com -->
-    <script src="jssor.slider-27.5.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
+<!-- Generator: Jssor Slider Maker -->
+<!-- Source: https://www.jssor.com -->
+<script src="jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
         jssor_1_slider_init = function() {
 
             var jssor_1_SlideoTransitions = [
@@ -236,39 +296,9 @@ body {
             /*#endregion responsive code end*/
         };
     </script>
-
-
+ 
     
-    <style>
-        /*jssor slider loading skin spin css*/
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        /*jssor slider bullet skin 032 css*/
-        .jssorb032 {position:absolute;}
-        .jssorb032 .i {position:absolute;cursor:pointer;}
-        .jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
-        .jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
-        .jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
-        .jssorb032 .i.idn {opacity:.3;}
-
-        /*jssor slider arrow skin 051 css*/
-        .jssora051 {display:block;position:absolute;cursor:pointer;}
-        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-        .jssora051:hover {opacity:.8;}
-        .jssora051.jssora051dn {opacity:.5;}
-        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-    </style>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/1.jpg" />
@@ -429,6 +459,8 @@ body {
         .jssora051.jssora051dn {opacity:.5;}
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
     </style>
+		
+		
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -500,50 +532,9 @@ body {
     <script type="text/javascript">jssor_1_slider_init();</script>
     <!-- #endregion Jssor Slider End -->	
 
-
-
-	
-
-  
-
-	
-
-  
- 
 	
 	
-	<nav class="navbar navbar-inverse navbar-fixed-top" class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">HOTEL NORMANDIA</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">HABITACIONES Y SERVICIOS</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NUESTROS HOTELES<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://hotelnormandia.github.io/">Hotel Normandia</a></li>
-            <li><a href="http://reservas.hotelboteromedellin.com.co/">Hotel Botero </a></li>
-           
-          </ul>
-        </li>
-        <li><a href="#">QUÍENES SOMOS</a></li>
-	<li><a href="#">MISIÓN</a></li>
-        <li><a href="#">VISIÓN</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Calle 53 #49-100, Medellín, Antioquia </a></li>
-        <li><a href="#"><span></span> WhatsApp +57 318 03637898</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
   
 <div  id="mySidebar" class="sidebar">
   
